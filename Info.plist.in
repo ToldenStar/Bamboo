@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>@_APP_NAME@</string>
+
+    <key>CFBundleExecutable</key>
+    <string>@BUNDLE_TARGET@</string>
+
+    <key>CFBundleIconFile</key>
+    <string>@_ICON_FILE@</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>@_BUNDLE_ID@</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>@_APP_NAME@</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>@_VERSION@</string>
+
+    <key>CFBundleVersion</key>
+    <string>@_VERSION@</string>
+
+    <key>NSHumanReadableCopyright</key>
+    <string>@_COPYRIGHT@</string>
+
+    <!-- Required by CEF: allow JIT compilation -->
+    <key>com.apple.security.cs.allow-jit</key>
+    <true/>
+
+    <!-- Allow unsigned executable memory (needed for Chromium's JIT) -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+
+    <!-- Disable library validation to allow CEF framework loading -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+
+    <!-- High resolution display support -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+
+    <!-- Suppress the "Application is not optimized for your Mac" warning on Apple Silicon -->
+    <key>LSMinimumSystemVersion</key>
+    <string>10.13</string>
+
+    <!-- Principal class -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- App Transport Security: allow local HTTP for dev servers -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+    </dict>
+</dict>
+</plist>
