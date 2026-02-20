@@ -1,7 +1,7 @@
 # 🎋 Bamboo
 
 A modern **C++23** desktop application framework powered by the
-[Chromium Embedded Framework (CEF)](https://bitbucket.org/chromiumembedded/cef).
+[Chromium Embedded Framework (CEF)](https://bitbucket.org/chromiumembedded/cef)
 Build cross-platform desktop apps with a Chromium web UI
 
 ---
